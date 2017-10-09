@@ -25,23 +25,24 @@ boundaryField
         type            fixedValue;
         value           uniform 1;
     }
-
     outlet
     {
         type            zeroGradient;
     }
+    equator
+    {
+        type            zeroGradient;
 
-    upperWall
+    }
+    pole
     {
         type            zeroGradient;
     }
-
-    lowerWall
+    top
     {
-        type            zeroGradient;
+        type            empty;
     }
-
-    frontAndBack
+    ground
     {
         type            empty;
     }
